@@ -1,13 +1,13 @@
 # Florida Kayaking Map
 
+![Sample Images](https://github.com/nth0007/Florida-Kayaking-Map/blob/master/images/combined_1000px.png)
+
 This project started out of a desire to plot GPS tracks from kayaking trips around Florida over a medium resolution raster of the state. I had difficulty finding a georeferenced raster of high enough resolution, so I opted to make my own. The resulting images are mosaics assembled from fourteen Landsat 8 scenes.
 
 ## Images Available for Download
 
 * [Florida 100m Resolution Natural Color geotif](https://drive.google.com/open?id=1Sg2E_HiEWjru_KhxURlG-DXYfCjEKSxE) - Bands 4, 3, and 2
 * [Florida 100m Resolution False Color geotif](https://drive.google.com/open?id=14TWi1SzKqJdn5E-UXciueLCjRiw_I2MQ) - Bands 6, 5, and 4
-
-![Sample Images](https://github.com/nth0007/Florida-Kayaking-Map/blob/master/images/combined_1000px.png)
 
 ## About Landsat Images
 
