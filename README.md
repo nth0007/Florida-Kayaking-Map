@@ -15,9 +15,16 @@ The mosaics available for download above were built from Landsat 8 imagery downl
 
 ## Included Files
 
-This project includes two Python scripts, "process_imagery.py" and "pl ot_tracks_over_map.py." The former uses system calls to various GDAL functions convert the raw Landsat rasters to a format useable by the latter. Additionally, "untar_script.sh" unzips the raw Landsat and removes unsused bands.
+The scripts below are used to create false and true color mosaics of Florida. The output images are available for download above.
+* **process_imagery.py** - Run this to process the raw Landsat TIFs. This can be skipped if you download the mosaics included above.
+* **tl_2016_12_cousub.shp** - US Census Bureau shape file (2016) used to crop the raw mosaic to the legal boundary of Florida.
+* **untar_script.sh** - Unzips the raw Landsat download and removes unused bands.
+* **scaleListTrue.csv** - Used to scale the brightness of each true color image to create a more seamless mosaic. The value specified in the right column is the desired 16-bit ceiling used when scaling to 8-bit.
+* **scaleListFalse.csv** - Used to scale the brightness of each false color image to create a more seamless mosaic. The value specified in the right column is the desired 16-bit ceiling used when scaling to 8-bit.
 
-* **process_imagery.py** - Run this to process the raw Landsat TIFs. It outputs a large mosaic similar to the images above.
+The files below are used to combine GPX tracks and the Florida mosaics.
+* **plot_tracks_over_map.py** - This plots GPX tracks over previously created mosaics.
+* **track_list.txt** - A list of GPX tracks to include in the plot. Each line is the name of a .gpx file located in the same folder.
 
 ### Prerequisites
 
