@@ -42,3 +42,18 @@ gpx_parser 0.0.4
 * [GDAL](https://gdal.org/) - Library for manipulating geoimages
 * [Rasterio](https://rasterio.readthedocs.io/en/stable/) - Python module used to read rasters
 * [gpx_parser](https://github.com/kholkolg/gpx_parser/) - Python module used to parse GPX files
+
+## Workflow
+If building mosaics from raw Landsat imagery:
+1. Download images (e.g. USGS Earth Explorer)
+2. Run "untar_script.sh" to extract desired bands.
+3. Run "process_imagery.py" to generate mosaics. This takes several minutes with a SSD.
+4. Go kayaking/hiking/etc, record your trip with a GPS device, and export the track as a .gpx file.
+5. Append the .gpx file name to "track_list.txt."
+6. Run "plot_tracks_over_map.py" to combine GPX tracks with the mosaic.
+
+If downloading mosaics from this page:
+1. Download Florida_Boundary_100m_FalseColor.tif and/or Florida_Boundary_100m_TrueColor.tif from the links above
+2. Go kayaking/hiking/etc, record your trip with a GPS device, and export the track as a .gpx file.
+3. Append the .gpx file name to "track_list.txt."
+4. Run "plot_tracks_over_map.py" to combine GPX tracks with the mosaic.
